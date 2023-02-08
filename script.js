@@ -5,15 +5,13 @@ $(document).ready(function()
         if($("#toggle-content1").is(":hidden"))
         {
             $("#toggle-content1").show("slow");
-            $("#top-arrow1").show();
-            $("#bottom-arrow1").hide();
+            $('#arrow1').animate({ deg: 90 }, {duration: "slow", step: function(now) {$(this).css({ transform: 'rotate(' + now + 'deg)' });}});
         }
 
         else
         {
             $("#toggle-content1").hide("slow");
-            $("#top-arrow1").hide();
-            $("#bottom-arrow1").show();
+            $('#arrow1').animate({ deg: 0 }, {duration: "slow", step: function(now) {$(this).css({ transform: 'rotate(' + now + 'deg)' });}});
         }
     });
 
@@ -22,15 +20,13 @@ $(document).ready(function()
         if($("#toggle-content2").is(":hidden"))
         {
             $("#toggle-content2").show("slow");
-            $("#top-arrow2").show();
-            $("#bottom-arrow2").hide();
+            $('#arrow2').animate({ deg: 90 }, {duration: "slow", step: function(now) {$(this).css({ transform: 'rotate(' + now + 'deg)' });}});
         }
 
         else
         {
             $("#toggle-content2").hide("slow");
-            $("#top-arrow2").hide();
-            $("#bottom-arrow2").show();
+            $('#arrow2').animate({ deg: 0 }, {duration: "slow", step: function(now) {$(this).css({ transform: 'rotate(' + now + 'deg)' });}});
         }
     });
 
@@ -39,15 +35,13 @@ $(document).ready(function()
         if($("#toggle-content3").is(":hidden"))
         {
             $("#toggle-content3").show("slow");
-            $("#top-arrow3").show();
-            $("#bottom-arrow3").hide();
+            $('#arrow3').animate({ deg: 90 }, {duration: "slow", step: function(now) {$(this).css({ transform: 'rotate(' + now + 'deg)' });}});
         }
 
         else
         {
             $("#toggle-content3").hide("slow");
-            $("#top-arrow3").hide();
-            $("#bottom-arrow3").show();
+            $('#arrow3').animate({ deg: 0 }, {duration: "slow", step: function(now) {$(this).css({ transform: 'rotate(' + now + 'deg)' });}});
         }
     });
 
@@ -56,15 +50,13 @@ $(document).ready(function()
         if($("#toggle-content4").is(":hidden"))
         {
             $("#toggle-content4").show("slow");
-            $("#top-arrow4").show();
-            $("#bottom-arrow4").hide();
+            $('#arrow4').animate({ deg: 90 }, {duration: "slow", step: function(now) {$(this).css({ transform: 'rotate(' + now + 'deg)' });}});
         }
 
         else
         {
             $("#toggle-content4").hide("slow");
-            $("#top-arrow4").hide();
-            $("#bottom-arrow4").show();
+            $('#arrow4').animate({ deg: 0 }, {duration: "slow", step: function(now) {$(this).css({ transform: 'rotate(' + now + 'deg)' });}});
         }
     });
 
@@ -73,15 +65,28 @@ $(document).ready(function()
         if($("#toggle-content5").is(":hidden"))
         {
             $("#toggle-content5").show("slow");
-            $("#top-arrow5").show();
-            $("#bottom-arrow5").hide();
+            $('#arrow5').animate({ deg: 90 }, {duration: "slow", step: function(now) {$(this).css({ transform: 'rotate(' + now + 'deg)' });}});
         }
 
         else
         {
             $("#toggle-content5").hide("slow");
-            $("#top-arrow5").hide();
-            $("#bottom-arrow5").show();
+            $('#arrow5').animate({ deg: 0 }, {duration: "slow", step: function(now) {$(this).css({ transform: 'rotate(' + now + 'deg)' });}});
+        }
+    });
+
+    $("#toggle-heading6").click(function()
+    {
+        if($("#toggle-content6").is(":hidden"))
+        {
+            $("#toggle-content6").show("slow");
+            $('#arrow6').animate({ deg: 90 }, {duration: "slow", step: function(now) {$(this).css({ transform: 'rotate(' + now + 'deg)' });}});
+        }
+
+        else
+        {
+            $("#toggle-content6").hide("slow");
+            $('#arrow6').animate({ deg: 0 }, {duration: "slow", step: function(now) {$(this).css({ transform: 'rotate(' + now + 'deg)' });}});
         }
     });
 });
